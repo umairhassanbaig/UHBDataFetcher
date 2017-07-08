@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UHBDataFetcher_Tests' do
+  pod 'UHBDataFetcher', :path => '../'
+  
+  
+end

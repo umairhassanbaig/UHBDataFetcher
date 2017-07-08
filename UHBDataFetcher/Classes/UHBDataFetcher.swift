@@ -11,9 +11,9 @@ import UIKit
 
 @objc public protocol UHBDataFetcherDelegate : class {
     
-    public func loadingCompleted(url: String, error: NSError?, data: Data?, cached_data : Bool);
-    @objc optional public func loadingCancelled(url: String)
-    @objc optional public func cacheCleared(url: String)
+    func loadingCompleted(url: String, error: NSError?, data: Data?, cached_data : Bool);
+    @objc optional func loadingCancelled(url: String)
+    @objc optional func cacheCleared(url: String)
 }
 
 

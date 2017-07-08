@@ -9,22 +9,22 @@
 import UIKit
 
 
-@objc protocol UHBDataFetcherDelegate : class {
+@objc public protocol UHBDataFetcherDelegate : class {
     
-    func loadingCompleted(url: String, error: NSError?, data: Data?, cached_data : Bool);
-    @objc optional func loadingCancelled(url: String)
-    @objc optional func cacheCleared(url: String)
+    public func loadingCompleted(url: String, error: NSError?, data: Data?, cached_data : Bool);
+    @objc optional public func loadingCancelled(url: String)
+    @objc optional public func cacheCleared(url: String)
 }
 
 
-class UHBDataFetcher: NSObject {
+public class UHBDataFetcher: NSObject {
 
     /// Shared instance can be used all over the app with shared cache
     public static let shared = UHBDataFetcher();
     
     
     /// New instances can be created. But that will create a separate cache and separate. Using a single instance all over the app is recommended.
-    override init() {
+    public override init() {
         self.data_queue = OperationQueue();
         self.cache = NSCache();
         super.init()

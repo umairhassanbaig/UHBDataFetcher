@@ -22,7 +22,7 @@ extension UIImageView : UHBDataFetcherDelegate {
     }
     
     
-    func uhb_setImage(forURL: String, completion : ((UIImage) -> Void)?) {
+    public func uhb_setImage(forURL: String, completion : ((UIImage) -> Void)?) {
         UHBDataFetcher.shared.cancelAll(forDelegate: self);
         self.image = nil;
         if completion != nil {
@@ -36,9 +36,12 @@ extension UIImageView : UHBDataFetcherDelegate {
         UHBDataFetcher.shared.data(forURL: forURL, delegate: self);
         
     }
-    func uhb_setImage(forURL: String) {
+    
+    
+    public func uhb_setImage(forURL: String) {
         self.uhb_setImage(forURL: forURL, completion: nil);
     }
+    
     
     func loadingCompleted(url: String, error: NSError?, data: Data?, cached_data : Bool) {
         

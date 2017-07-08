@@ -1,0 +1,6 @@
+framework module UHBDataFetcher {
+  umbrella header "UHBDataFetcher-umbrella.h"
+
+  export *
+  module * { export * }
+}

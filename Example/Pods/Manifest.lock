@@ -1,0 +1,16 @@
+PODS:
+  - UHBDataFetcher (0.1.0)
+
+DEPENDENCIES:
+  - UHBDataFetcher (from `../`)
+
+EXTERNAL SOURCES:
+  UHBDataFetcher:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UHBDataFetcher: a633ee267c29f1544d2449eabd9416f08972074e
+
+PODFILE CHECKSUM: cc4cdc48810c4aff8036b34dcf24baa9b5fb7a1d
+
+COCOAPODS: 1.2.1

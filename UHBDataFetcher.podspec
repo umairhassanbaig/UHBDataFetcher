@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'UHBDataFetcher'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of UHBDataFetcher.'
+  s.summary          = 'A background data fetcher for iOS written in SWIFT 3 with caching ability'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'UHBDataFetcher lets you download any form of data in background with caching ability. It also provides you UIImageView extension to download and show images in your app with caching ability. Hard cache will be implemented soon.'
 
   s.homepage         = 'https://github.com/umairhassanbaig@gmail.com/UHBDataFetcher'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

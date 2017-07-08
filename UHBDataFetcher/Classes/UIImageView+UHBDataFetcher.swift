@@ -33,7 +33,7 @@ extension UIImageView : UHBDataFetcherDelegate {
                 self?.image = image;
             }
         }
-        UHBDataFetcher.shared.data(forURL: forURL, delegate: self);
+        UHBDataFetcher.shared.data(forURL: forURL, forDelegate: self);
         
     }
     

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D03EE21B14498C793043EA04A44392 /* UHBDataFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B5D53FE638B4BD6646EF948000224 /* UHBDataFetcher-dummy.m */; };
+		07591958FBCC2571109E3E732B0CB123 /* UIImageView+UHBDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C4BF2415BC56631FEDC36F8763D8C /* UIImageView+UHBDataFetcher.swift */; };
 		392893F9DD9C197E26E305C2E5B17C87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		44C86177A0A54ED5FB601972C7545CDC /* UHBDataFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F434D87C7E3EA7B01E98BC68824502A /* UHBDataFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		522F850773F4FE1B1ADF0D737456450F /* UHBDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F743E6AED25B1FEBDC09D2E52E2BCC /* UHBDataFetcher.swift */; };
 		6DC97C7CE9C665CC681D6649B7E2FF22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		80B21C871F111BC2006C075C /* UHBDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B21C851F111BC2006C075C /* UHBDataFetcher.swift */; };
-		80B21C881F111BC2006C075C /* UIImageView+UHBDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B21C861F111BC2006C075C /* UIImageView+UHBDataFetcher.swift */; };
-		8BC541E85A3C91748055CB6206EBEFCD /* UHBDataFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B5D53FE638B4BD6646EF948000224 /* UHBDataFetcher-dummy.m */; };
 		9F8F93882A168FC42E4D5760C98A879F /* Pods-UHBDataFetcher_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C48688E132FD36E81738DD022E4B7C9 /* Pods-UHBDataFetcher_Tests-dummy.m */; };
 		DE46031E76DC252D740CE96AE3ECC9C0 /* Pods-UHBDataFetcher_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 161AD30F068DE950D5E5382DE8DE10E7 /* Pods-UHBDataFetcher_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -35,12 +35,12 @@
 		4B5BF38DB561C7E1E4B9CCE931E5F13C /* UHBDataFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UHBDataFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A025B5D671A001F872D3EAC36C64AF /* UHBDataFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UHBDataFetcher.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69F743E6AED25B1FEBDC09D2E52E2BCC /* UHBDataFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UHBDataFetcher.swift; sourceTree = "<group>"; };
 		6C26381D6352893550002658D12F6AE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5E68D540B00AF85F946F4433ED487F /* Pods_UHBDataFetcher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHBDataFetcher_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C64D52A6B4D3D0A4D6D30E565BB098C /* Pods-UHBDataFetcher_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UHBDataFetcher_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7E933462CA6CB2E41761BC1AA9AC940A /* Pods-UHBDataFetcher_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UHBDataFetcher_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		80B21C851F111BC2006C075C /* UHBDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UHBDataFetcher.swift; sourceTree = "<group>"; };
-		80B21C861F111BC2006C075C /* UIImageView+UHBDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+UHBDataFetcher.swift"; sourceTree = "<group>"; };
+		848C4BF2415BC56631FEDC36F8763D8C /* UIImageView+UHBDataFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+UHBDataFetcher.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C48688E132FD36E81738DD022E4B7C9 /* Pods-UHBDataFetcher_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UHBDataFetcher_Tests-dummy.m"; sourceTree = "<group>"; };
 		A7CF8916B3A44F1CBE5F09A80BC5891A /* Pods-UHBDataFetcher_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UHBDataFetcher_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -80,19 +80,11 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		42CAC364D22A4D719E8041B5A475218B /* UHBDataFetcher */ = {
+		48204B564347050D0347738D655DF532 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				44DB0147A802A3E34192132568EF3CEF /* Classes */,
-			);
-			path = UHBDataFetcher;
-			sourceTree = "<group>";
-		};
-		44DB0147A802A3E34192132568EF3CEF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				80B21C851F111BC2006C075C /* UHBDataFetcher.swift */,
-				80B21C861F111BC2006C075C /* UIImageView+UHBDataFetcher.swift */,
+				69F743E6AED25B1FEBDC09D2E52E2BCC /* UHBDataFetcher.swift */,
+				848C4BF2415BC56631FEDC36F8763D8C /* UIImageView+UHBDataFetcher.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -101,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				A1CAE54B444A1F6D2C00413828AA8BCC /* Support Files */,
-				42CAC364D22A4D719E8041B5A475218B /* UHBDataFetcher */,
+				D019505187D7A7356B24C7A17FD1F600 /* UHBDataFetcher */,
 			);
 			name = UHBDataFetcher;
 			path = ../..;
@@ -175,6 +167,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D019505187D7A7356B24C7A17FD1F600 /* UHBDataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				48204B564347050D0347738D655DF532 /* Classes */,
+			);
+			path = UHBDataFetcher;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA22929D8AF5BB78AE908673ADBCADCE /* Build configuration list for PBXNativeTarget "UHBDataFetcher" */;
 			buildPhases = (
-				4CCF833F94F1B01B4EB5DFDEC1239220 /* Sources */,
+				B647AC1B897204C4CA6983B76FA04D09 /* Sources */,
 				AB14B919569FA17EA9AEAD9AFA9DF792 /* Frameworks */,
 				7D72B7AF5CC481203174C9CB60FEB27A /* Headers */,
 			);
@@ -278,16 +278,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8F93882A168FC42E4D5760C98A879F /* Pods-UHBDataFetcher_Tests-dummy.m in Sources */,
-				80B21C871F111BC2006C075C /* UHBDataFetcher.swift in Sources */,
-				80B21C881F111BC2006C075C /* UIImageView+UHBDataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CCF833F94F1B01B4EB5DFDEC1239220 /* Sources */ = {
+		B647AC1B897204C4CA6983B76FA04D09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BC541E85A3C91748055CB6206EBEFCD /* UHBDataFetcher-dummy.m in Sources */,
+				01D03EE21B14498C793043EA04A44392 /* UHBDataFetcher-dummy.m in Sources */,
+				522F850773F4FE1B1ADF0D737456450F /* UHBDataFetcher.swift in Sources */,
+				07591958FBCC2571109E3E732B0CB123 /* UIImageView+UHBDataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

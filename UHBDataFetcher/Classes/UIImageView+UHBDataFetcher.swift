@@ -43,7 +43,7 @@ extension UIImageView : UHBDataFetcherDelegate {
     }
     
     
-    func loadingCompleted(url: String, error: NSError?, data: Data?, cached_data : Bool) {
+    public func loadingCompleted(url: String, error: NSError?, data: Data?, cached_data : Bool) {
         
         if data != nil{
             if let image = UIImage(data: data!) {

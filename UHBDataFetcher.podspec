@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UHBDataFetcher'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A background data fetcher for iOS written in SWIFT 3 with caching ability'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = 'UHBDataFetcher lets you download any form of data in background with caching ability. It also provides you UIImageView extension to download and show images in your app with caching ability. Hard cache will be implemented soon.'
 
-  s.homepage         = 'https://github.com/umairhassanbaig@gmail.com/UHBDataFetcher'
+  s.homepage         = 'https://github.com/umairhassanbaig/UHBDataFetcher'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'umairhassanbaig@gmail.com' => 'umairhassanbaig@gmail.com' }

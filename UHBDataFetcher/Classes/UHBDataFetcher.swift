@@ -19,6 +19,15 @@ import UIKit
 
 public class UHBDataFetcher: NSObject {
 
+    //Private
+    private var data_queue : OperationQueue
+    private var cache : UHBDataCache//NSCache<AnyObject, AnyObject>
+    
+    
+    //=================================
+    // MARK: - Public interface
+    //=================================
+    
     /// Shared instance can be used all over the app with shared cache
     public static let shared = UHBDataFetcher();
     
@@ -45,17 +54,6 @@ public class UHBDataFetcher: NSObject {
         }
     }
     
-    //Private
-    private var data_queue : OperationQueue
-    private var cache : UHBDataCache//NSCache<AnyObject, AnyObject>
-    
-    
-    
-    
-    
-    //=================================
-    // MARK: - Public interface
-    //=================================
     
     
     /// Starts fetching data from specified url for the passed delegate object.
@@ -172,8 +170,9 @@ fileprivate extension Array where Element:Weak<UHBDataFetcherDelegate> {
 
 
 
+/// Subclassed Operation/NSOperation for download
 private class DownloadOperation: Operation {
-
+    
     var onFetchCompletion : ((_ observers : [UHBDataFetcherDelegate],_ error: NSError?, _ data: Data?) -> Void)?
     var request_url : String
     /// Storing observers as weak to avoid retain cycles
@@ -182,6 +181,9 @@ private class DownloadOperation: Operation {
     
     
     
+    /// initialize with request
+    ///
+    /// - Parameter request_url: url for request
     init(request_url : String) {
         self.request_url = request_url;
         super.init();

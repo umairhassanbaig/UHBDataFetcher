@@ -17,6 +17,11 @@ class UHBDataCache: NSObject {
     
     private var cache : [AnyHashable : Any]
     private var clearance_factor : Int = 4;
+    
+    
+    //=================================
+    // MARK: - Public interface
+    //=================================
     public override init() {
         self.capacity = 300
         self.cache = [AnyHashable : Any]();
@@ -80,7 +85,9 @@ class UHBDataCache: NSObject {
     }
     
     
-
+    //=================================
+    // MARK: - Memory management
+    //=================================
     /// Clears objects if app memory is low
     @objc private func recievedMemoryWarning() {
         self.cache.removeAll();
@@ -90,7 +97,9 @@ class UHBDataCache: NSObject {
         NotificationCenter.default.removeObserver(self);
     }
     
-    
+    //=================================
+    // MARK: - Cache Object
+    //=================================
     /// Wrapper object with date to manage order by usage
     private class UHBCacheObject : NSObject {
         var date : Date

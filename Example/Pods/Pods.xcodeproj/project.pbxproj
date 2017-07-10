@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01D03EE21B14498C793043EA04A44392 /* UHBDataFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B5D53FE638B4BD6646EF948000224 /* UHBDataFetcher-dummy.m */; };
-		07591958FBCC2571109E3E732B0CB123 /* UIImageView+UHBDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C4BF2415BC56631FEDC36F8763D8C /* UIImageView+UHBDataFetcher.swift */; };
 		392893F9DD9C197E26E305C2E5B17C87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		44C86177A0A54ED5FB601972C7545CDC /* UHBDataFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F434D87C7E3EA7B01E98BC68824502A /* UHBDataFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		522F850773F4FE1B1ADF0D737456450F /* UHBDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F743E6AED25B1FEBDC09D2E52E2BCC /* UHBDataFetcher.swift */; };
 		6DC97C7CE9C665CC681D6649B7E2FF22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9F8F93882A168FC42E4D5760C98A879F /* Pods-UHBDataFetcher_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C48688E132FD36E81738DD022E4B7C9 /* Pods-UHBDataFetcher_Tests-dummy.m */; };
+		AB1B05DEC390DCCDBC65611263242094 /* UHBDataFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B5D53FE638B4BD6646EF948000224 /* UHBDataFetcher-dummy.m */; };
+		AF8704E83EF5A1DDC7A3115CE503AE5F /* UHBDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA9160C61040839AC484398877E586 /* UHBDataFetcher.swift */; };
 		DE46031E76DC252D740CE96AE3ECC9C0 /* Pods-UHBDataFetcher_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 161AD30F068DE950D5E5382DE8DE10E7 /* Pods-UHBDataFetcher_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE750E4A05AA366851B2A4EC926D2AE3 /* UHBDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDF9199880B7EFBCC5F5582599E8D94 /* UHBDataCache.swift */; };
+		FE8129180387B6EB1895685390D7C479 /* UIImageView+UHBDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365EEA7AE31E81268628045D374F5CE4 /* UIImageView+UHBDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,25 +30,26 @@
 
 /* Begin PBXFileReference section */
 		161AD30F068DE950D5E5382DE8DE10E7 /* Pods-UHBDataFetcher_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UHBDataFetcher_Tests-umbrella.h"; sourceTree = "<group>"; };
+		365EEA7AE31E81268628045D374F5CE4 /* UIImageView+UHBDataFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+UHBDataFetcher.swift"; sourceTree = "<group>"; };
 		3AD05439F6DD3A1FE1209A646F0ED60E /* Pods-UHBDataFetcher_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UHBDataFetcher_Tests-resources.sh"; sourceTree = "<group>"; };
 		3E0B5D53FE638B4BD6646EF948000224 /* UHBDataFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UHBDataFetcher-dummy.m"; sourceTree = "<group>"; };
 		3F434D87C7E3EA7B01E98BC68824502A /* UHBDataFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UHBDataFetcher-umbrella.h"; sourceTree = "<group>"; };
-		4B5BF38DB561C7E1E4B9CCE931E5F13C /* UHBDataFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UHBDataFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		53A025B5D671A001F872D3EAC36C64AF /* UHBDataFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UHBDataFetcher.modulemap; sourceTree = "<group>"; };
+		4B5BF38DB561C7E1E4B9CCE931E5F13C /* UHBDataFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UHBDataFetcher.framework; path = UHBDataFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A025B5D671A001F872D3EAC36C64AF /* UHBDataFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UHBDataFetcher.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		69F743E6AED25B1FEBDC09D2E52E2BCC /* UHBDataFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UHBDataFetcher.swift; sourceTree = "<group>"; };
 		6C26381D6352893550002658D12F6AE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E5E68D540B00AF85F946F4433ED487F /* Pods_UHBDataFetcher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHBDataFetcher_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5E68D540B00AF85F946F4433ED487F /* Pods_UHBDataFetcher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UHBDataFetcher_Tests.framework; path = "Pods-UHBDataFetcher_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C64D52A6B4D3D0A4D6D30E565BB098C /* Pods-UHBDataFetcher_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UHBDataFetcher_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7DDF9199880B7EFBCC5F5582599E8D94 /* UHBDataCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UHBDataCache.swift; sourceTree = "<group>"; };
 		7E933462CA6CB2E41761BC1AA9AC940A /* Pods-UHBDataFetcher_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UHBDataFetcher_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		848C4BF2415BC56631FEDC36F8763D8C /* UIImageView+UHBDataFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImageView+UHBDataFetcher.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C48688E132FD36E81738DD022E4B7C9 /* Pods-UHBDataFetcher_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UHBDataFetcher_Tests-dummy.m"; sourceTree = "<group>"; };
 		A7CF8916B3A44F1CBE5F09A80BC5891A /* Pods-UHBDataFetcher_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UHBDataFetcher_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B1F64871F46ACBFCB1CEC17896939B4C /* UHBDataFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UHBDataFetcher.xcconfig; sourceTree = "<group>"; };
 		BCE8E0CE6480F13A53DB56E02CD249C5 /* Pods-UHBDataFetcher_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UHBDataFetcher_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		BD6FB87936261C1AFCEC37C42EE29582 /* Pods-UHBDataFetcher_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UHBDataFetcher_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CF79EB09FABE94A29D7800B643C706BB /* Pods-UHBDataFetcher_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UHBDataFetcher_Tests.modulemap"; sourceTree = "<group>"; };
+		CEEA9160C61040839AC484398877E586 /* UHBDataFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UHBDataFetcher.swift; sourceTree = "<group>"; };
+		CF79EB09FABE94A29D7800B643C706BB /* Pods-UHBDataFetcher_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UHBDataFetcher_Tests.modulemap"; sourceTree = "<group>"; };
 		D80AD7F5497987E7F973127439AB6A8B /* UHBDataFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UHBDataFetcher-prefix.pch"; sourceTree = "<group>"; };
 		EDD5900C501A89C7F1E691F3CA1BF0D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A5FB91FAAAAB0D6116084F43AC524E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7DDF9199880B7EFBCC5F5582599E8D94 /* UHBDataCache.swift */,
+				CEEA9160C61040839AC484398877E586 /* UHBDataFetcher.swift */,
+				365EEA7AE31E81268628045D374F5CE4 /* UIImageView+UHBDataFetcher.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		309D2A2EE041AC07105B3E7A8B5B83C8 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,20 +93,11 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		48204B564347050D0347738D655DF532 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				69F743E6AED25B1FEBDC09D2E52E2BCC /* UHBDataFetcher.swift */,
-				848C4BF2415BC56631FEDC36F8763D8C /* UIImageView+UHBDataFetcher.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		4C26D518EEE1E6E373AE7CE8362CAFCD /* UHBDataFetcher */ = {
 			isa = PBXGroup;
 			children = (
 				A1CAE54B444A1F6D2C00413828AA8BCC /* Support Files */,
-				D019505187D7A7356B24C7A17FD1F600 /* UHBDataFetcher */,
+				5C87BFF6386F5423CD3DFBEB0C7CA46E /* UHBDataFetcher */,
 			);
 			name = UHBDataFetcher;
 			path = ../..;
@@ -115,6 +119,15 @@
 			);
 			name = "Pods-UHBDataFetcher_Tests";
 			path = "Target Support Files/Pods-UHBDataFetcher_Tests";
+			sourceTree = "<group>";
+		};
+		5C87BFF6386F5423CD3DFBEB0C7CA46E /* UHBDataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				1A5FB91FAAAAB0D6116084F43AC524E6 /* Classes */,
+			);
+			name = UHBDataFetcher;
+			path = UHBDataFetcher;
 			sourceTree = "<group>";
 		};
 		740CE0B079B120895CF35B4FA0A1A453 /* Targets Support Files */ = {
@@ -167,14 +180,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D019505187D7A7356B24C7A17FD1F600 /* UHBDataFetcher */ = {
-			isa = PBXGroup;
-			children = (
-				48204B564347050D0347738D655DF532 /* Classes */,
-			);
-			path = UHBDataFetcher;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA22929D8AF5BB78AE908673ADBCADCE /* Build configuration list for PBXNativeTarget "UHBDataFetcher" */;
 			buildPhases = (
-				B647AC1B897204C4CA6983B76FA04D09 /* Sources */,
+				30B9B8BC12C8EA172E418359C1C22E99 /* Sources */,
 				AB14B919569FA17EA9AEAD9AFA9DF792 /* Frameworks */,
 				7D72B7AF5CC481203174C9CB60FEB27A /* Headers */,
 			);
@@ -248,11 +253,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					5B10FFF49CFE5ECA444B607AAA9F1E94 = {
-						LastSwiftMigration = 0830;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -273,21 +273,22 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		30B9B8BC12C8EA172E418359C1C22E99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE750E4A05AA366851B2A4EC926D2AE3 /* UHBDataCache.swift in Sources */,
+				AB1B05DEC390DCCDBC65611263242094 /* UHBDataFetcher-dummy.m in Sources */,
+				AF8704E83EF5A1DDC7A3115CE503AE5F /* UHBDataFetcher.swift in Sources */,
+				FE8129180387B6EB1895685390D7C479 /* UIImageView+UHBDataFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37C4E6C0B3781801DED47FB7E0A3C77A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9F8F93882A168FC42E4D5760C98A879F /* Pods-UHBDataFetcher_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B647AC1B897204C4CA6983B76FA04D09 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				01D03EE21B14498C793043EA04A44392 /* UHBDataFetcher-dummy.m in Sources */,
-				522F850773F4FE1B1ADF0D737456450F /* UHBDataFetcher.swift in Sources */,
-				07591958FBCC2571109E3E732B0CB123 /* UIImageView+UHBDataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +308,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E933462CA6CB2E41761BC1AA9AC940A /* Pods-UHBDataFetcher_Tests.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -395,7 +395,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD6FB87936261C1AFCEC37C42EE29582 /* Pods-UHBDataFetcher_Tests.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

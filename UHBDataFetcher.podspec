@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UHBDataFetcher'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A background data fetcher for iOS written in SWIFT 3 with caching ability'
 
 # This description is used to generate tags and improve search results.

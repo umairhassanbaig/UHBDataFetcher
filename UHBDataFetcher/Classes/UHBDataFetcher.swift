@@ -19,16 +19,15 @@ import UIKit
 
 public class UHBDataFetcher: NSObject {
 
-    /// Shared instance can be used all over the app
+    /// Shared instance can be used all over the app with shared cache
     public static let shared = UHBDataFetcher();
     
     
-    /// New instances can be created. But that will create a separate environment and separate cache. Using a single instance all over the app is recommended.
+    /// New instances can be created. But that will create a separate cache and separate. Using a single instance all over the app is recommended.
     public override init() {
         self.data_queue = OperationQueue();
-        self.cache = NSCache();
+        self.cache = UHBDataCache(capacity: 300);
         super.init()
-        self.cache_capacity = 300;
     }
     
     public convenience init(cache_capacity : Int) {
@@ -39,16 +38,16 @@ public class UHBDataFetcher: NSObject {
     /// Capacity of cache
     public var cache_capacity : Int {
         get {
-            return self.cache.countLimit;
+            return self.cache.capacity;
         }
         set {
-            self.cache.countLimit = newValue;
+            self.cache.capacity = newValue;
         }
     }
     
     //Private
     private var data_queue : OperationQueue
-    private var cache : NSCache<AnyObject, AnyObject>
+    private var cache : UHBDataCache//NSCache<AnyObject, AnyObject>
     
     
     
@@ -64,10 +63,10 @@ public class UHBDataFetcher: NSObject {
     /// - Parameters:
     ///   - forURL: URL for which data has to be fetched
     ///   - delegate: Delegate object to be notified
-    public func data(forURL: String, forDelegate delegate: UHBDataFetcherDelegate) {
+    public func data(forURL: String, delegate: UHBDataFetcherDelegate) {
         
         //Checking if already present in cache
-        if let cached = self.cache.object(forKey: forURL as AnyObject) as? Data
+        if let cached = self.cache.object(forKey: forURL) as? Data
         {
             delegate.loadingCompleted(url: forURL, error: nil, data: cached, cached_data: true);
         
@@ -85,7 +84,7 @@ public class UHBDataFetcher: NSObject {
             operation!.onFetchCompletion = {
                 (observers, error, data) in
                 if error == nil && data != nil {
-                    self.cache.setObject(data as AnyObject, forKey: forURL as AnyObject)
+                    self.cache.setObject(data as AnyObject, forKey: forURL)
                 }
                 DispatchQueue.main.async {
                     //Notifying all observers for the downloaded operation
@@ -104,7 +103,7 @@ public class UHBDataFetcher: NSObject {
     /// - Parameters:
     ///   - forURL: URL of which download has to be cancelled
     ///   - delegate: Object for which the url download has to be cancelled
-    public func cancel(forURL: String, forDelegate delegate : UHBDataFetcherDelegate) {
+    public func cancel(forURL: String, delegate : UHBDataFetcherDelegate) {
         
         if let operation = self.data_queue.operations.first(where: {forURL == ($0 as! DownloadOperation).request_url }) as? DownloadOperation {
             operation.removeObserver(observer: delegate);
@@ -119,11 +118,11 @@ public class UHBDataFetcher: NSObject {
     /// Cancels all downloads only for specified delegate. Delegate will not be notified for the download
     ///
     /// - Parameter forDelegate: Delegate object for which the download has to be abandoned
-    public func cancelAll(forDelegate delegate: UHBDataFetcherDelegate) {
+    public func cancelAll(forDelegate : UHBDataFetcherDelegate) {
       
         self.data_queue.operations.forEach({
             if let op = $0 as? DownloadOperation {
-                op.removeObserver(observer: delegate);
+                op.removeObserver(observer: forDelegate);
             }
         })
     }
@@ -137,8 +136,8 @@ public class UHBDataFetcher: NSObject {
     ///   - forURL: URL for which the cache is
     ///   - delegate: Object to be informed
     
-    public func clearCache(forURL: String, forDelegate delegate : UHBDataFetcherDelegate?) {
-        self.cache.removeObject(forKey: forURL as AnyObject);
+    public func clearCache(forURL: String, delegate : UHBDataFetcherDelegate?) {
+        self.cache.removeObject(forKey: forURL);
         delegate?.cacheCleared?(url: forURL)
     }
     

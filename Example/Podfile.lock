@@ -1,5 +1,5 @@
 PODS:
-  - UHBDataFetcher (1.0.1)
+  - UHBDataFetcher (1.0.2)
 
 DEPENDENCIES:
   - UHBDataFetcher (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  UHBDataFetcher: 0b427bf13fee1cc468a303b33b96ee622fcd1c4f
+  UHBDataFetcher: ff2a8a9c5884fba9f577643f490e2f0f10a7bffd
 
 PODFILE CHECKSUM: cc4cdc48810c4aff8036b34dcf24baa9b5fb7a1d
 

@@ -241,8 +241,9 @@ private class DownloadOperation: Operation {
             }
             
             if self.isCancelled { return }
-            let obs = self.observers.map({$0.value}) as! [UHBDataFetcherDelegate]
-            self.onFetchCompletion?(obs, nil, data)
+            if let obs = self.observers.map({$0.value}) as? [UHBDataFetcherDelegate] {
+                self.onFetchCompletion?(obs, nil, data)
+            }
         }
         
     }

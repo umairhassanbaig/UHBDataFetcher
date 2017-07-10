@@ -17,6 +17,7 @@ import UIKit
 }
 
 
+/// UHBDataFetcher lets you download any form of data in background with caching ability.
 public class UHBDataFetcher: NSObject {
 
     //Private
